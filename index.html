@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>ATM</title>
+      <style>
+
+        body {
+
+          background-image: url('https://img.huffingtonpost.com/asset/5f8230af1f00001e500c1abf.jpeg?cache=paPx2EbOEU&amp;ops=1200_630');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: darkgrey;
+          font-size: 20px;
+          color:rgb(0, 0, 0);
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+          align-items: center;
+          margin: 0;
+          font-family:Arial, Helvetica, sans-serif;
+
+        }
+
+        .container {
+          text-align: center;
+          background: rgb(207, 223, 191);
+          padding: 30px;
+          border-radius: 20px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          border: 2px solid black;
+        }
+
+       input {
+           padding: 10px;
+           font-size: 16px;
+           width: 100%;
+           margin-bottom: 10px;
+           border-radius: 10px;
+          
+       }
+
+       button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 15px;
+          background-color: white;
+       }
+
+       </style>
+       </head>
+       <body>
+       <div class="container">
+
+       <p>Welcome to ATM!</p>
+
+       <input type = "password" placeholder = "PIN" class = "js-cost-input" id = "pinInput">
+       <button onclick = "calculate()">Check</button>
+
+      <script>
+      //Мы изменяем значение в кнопке
+      function calculate(){
+          const input = document.querySelector(".js-cost-input");
+          const pin  = input.value;
+          //Проверяем коректен ли PIN код
+    
+          if (pin == "1234"){
+             alert("Your pin is corect!");
+          } else {
+              alert("Incorrect PIN. Please try again.");
+          }
+       }
+      
+
+        </script>
+    </body>
+</html>
