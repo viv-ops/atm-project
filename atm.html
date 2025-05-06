@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+    <head>
+      <meta charset="UTF-8">
+      <title>ATM</title>
+    <style>
+
+        body {
+              background-color: #d9f2c1; 
+              font-family: 'Arial', sans-serif;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              margin: 0;
+              background-image: url('https://img.huffingtonpost.com/asset/5f8230af1f00001e500c1abf.jpeg?cache=paPx2EbOEU&ops=1200_630');
+              background-size: cover;
+              background-position: center;
+          }
+        
+  
+        .welcome{
+            text-align: center;
+            padding: 5px;
+            color:rgb(0, 0, 0);
+            size: 10px;
+        }
+  
+        .atm-container {
+              border: 2px solid black;
+              background-color: rgb(207, 223, 191);
+              border-radius: 30px;
+              padding: 5px;
+              width: 400px;
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+              text-align: center;
+              max-height: 850px; 
+              overflow-y: auto;
+              
+        }
+  
+        
+  
+        p{
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 20px;
+          color: #000000;
+          text-align: center;
+          font-family: 'Segoe UI', sans-serif;
+        }
+  
+        input:focus {
+              border-color: #27ae60;
+          }
+  
+        input{
+              width: 100%;
+              max-width: 85%;
+              padding: 15px;
+              font-size: 18px;
+              border-radius: 30px;
+              border: 1px solid #000000;
+              margin-bottom: 20px;
+              background-color: #ffffff;
+              color: rgb(0, 0, 0);
+              text-align: center;
+              outline: none;
+              transition: border-color 0.3s ease;
+              box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            
+        }
+        
+  
+        button{
+              width: 100%;
+              padding: 10px;
+              font-size: 18px;
+              background-color: #ffffff; 
+              color: rgb(0, 0, 0);
+              border: none;
+              border-radius: 15px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+              border: 1px solid #000000;
+        }
+  
+        button:hover {
+              background-color: #9ccfb1; 
+          }
+  
+        button:active {
+              background-color: #d4f78e; 
+        }
+      </style>
+      </head>
+    <body>
+      <div class = 'atm-container'>
+      <h1 class = 'welcome'>Мой банк</h1>
+      
+      <p >Накопления</p>
+      <input type = 'text' placeholder = "Накопления"  disabled>
+
+      <p >Внести деньги</p>
+      <input placeholder = "Сумма" >
+      <button>Добавить</button>
+
+      <p >Снять деньги</p>
+      <input placeholder = "Сумма" >
+      <button>Снять</button>
+
+      <p >Поменять PIN</p>
+      <input type = "password" placeholder = "PIN" id = "pinInput">
+      <button>Поменять</button>
+
+      <p >Завершить</p>
+      <button>Завершить</button>
+
+      </div>
+    </body>
+    <script>
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+    alert("Эта функция пока не работает");
+  });
+});
+    </script>
+</html>
